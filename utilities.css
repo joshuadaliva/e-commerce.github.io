@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+/*padding for all container*/
+.preferred-padding{
+    padding: 10px 20px;
+}
+/*size for all icons and user image*/
+.preferred-icon-size{
+    max-width: 50px;
+}
+.preferred-border-radius{
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+}

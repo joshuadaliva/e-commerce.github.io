@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins-medium;
+    color: var(--text-color);
+}
+:root{
+    --background-color:rgb(243,243,243);
+    --text-color:rgb(89,89,89);
+}
+html, body{
+    height: 100%;
+    background-color: var(--background-color);
+}
+/*navigation bar*/
+.nav-bar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 100px 0px solid var(--text-color);
+}
+.logo-img-description{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;    
+    align-items: center;
+    color: var(--text-color);
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav-links input{
+    height:30px;
+    width: 200px;
+}
+
+
+/*main-content*/
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'coffee-banner0 coffee-banner1';
+    margin-top: 5rem;
+    padding:0px 40px;
+}
+.coffee-banner0{
+    grid-area: coffee-banner0;
+}
+.coffee-banner1{
+    grid-area: coffee-banner1;
+}
+.main-content h1{
+    font-size: 6rem;
+    color: rgb(58, 58, 58);
+}
+.main-content h2,p{
+    padding: 0 20px;
+}
+.main-content button{
+    margin: 40px 20px;
+    padding: 10px 20px;
+}
+.btn1{
+    display: flex;
+}
+.btn2{
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+}
+.main-content img{
+    width: 90%;
+    height: 100%;
+}
+
+@media (max-width:700px) {
+    .nav-links{
+        visibility: hidden;
+        height: 5px;
+    }
+    .main-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'coffee-banner1'
+        'coffee-banner0';
+        padding:0px 30px;
+    }    
+    .main-content h1{
+        font-size: 4rem;
+        color: rgb(58, 58, 58);
+    }
+}
