@@ -1,0 +1,31 @@
+@media (max-width:700px) {
+    .nav-links{
+        visibility: hidden;
+        height: 5px;
+    }
+    .main-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'coffee-banner1'
+        'coffee-banner0';
+        padding:0px 30px;
+    }    
+    .main-content h1{
+        font-size: 4rem;
+        color: rgb(58, 58, 58);
+    }
+    .top-purchase-banner{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        grid-template-areas: 
+        "coffee2-size"
+        "description1"
+        ;
+    }
+    .products-sections{
+        padding: 0px 40px;
+    }
+    .products-sections h2{
+        font-size: 1rem;
+    }
+}

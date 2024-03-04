@@ -8,6 +8,7 @@
 :root{
     --background-color:rgb(243,243,243);
     --text-color:rgb(89,89,89);
+    --box-shadow:  0px 0px 1px hsl(0, 12%, 83%);
 }
 html, body{
     height: 100%;
@@ -83,21 +84,42 @@ html, body{
     width: 90%;
     height: 100%;
 }
-
-@media (max-width:700px) {
-    .nav-links{
-        visibility: hidden;
-        height: 5px;
-    }
-    .main-content{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'coffee-banner1'
-        'coffee-banner0';
-        padding:0px 30px;
-    }    
-    .main-content h1{
-        font-size: 4rem;
-        color: rgb(58, 58, 58);
-    }
+/*products*/
+.top-purchase-banner{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-areas: "description1 coffee2-size";
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    gap: 40px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding: 40px;
+} 
+.coffee2-size{
+    grid-area:coffee2-size;
+    height: 100%;
+    max-width: 100%;
+    max-height: 40dvh;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.coffee2-size img{
+    max-height: 100%;
+    max-width: 100%;
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+.description1{
+    grid-area: description1;
+}
+.description1 h2,h4{
+    font-family:  poppins-regular;
+    line-height: 3;
+}
+.description1 button{
+    padding: 13px 40px;
+    margin-top: 2rem;
 }

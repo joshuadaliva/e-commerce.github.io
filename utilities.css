@@ -2,10 +2,13 @@
     font-family: 'poppins-medium';
     src: url(fonts/Poppins-Medium.ttf);
 }
-
+@font-face {
+    font-family: poppins-regular;
+    src: url(fonts/Poppins-Regular.ttf);
+}
 /*padding for all container*/
 .preferred-padding{
-    padding: 10px 20px;
+    padding: 10px 80px;
 }
 /*size for all icons and user image*/
 .preferred-icon-size{
@@ -14,4 +17,10 @@
 .preferred-border-radius{
     border-radius: 5px;
     border: 1px solid var(--text-color);
+}
+.preffered-margin-top{
+    margin-top: 4rem;
+}
+.float{
+    justify-content: right;
 }
