@@ -24,3 +24,7 @@
 .float{
     justify-content: right;
 }
+.h1-font-2rem{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
